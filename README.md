@@ -17,3 +17,9 @@ The following command will calculate the MSRS of all candidate architectures in 
 ```bash
 python NAS_MSRS.py --gpu 2 --set cifar10 --batch_size 256 --num_classes 10
 ```
+
+## 4.redundancy-aware layer pruning 
+There are pruned models in get_new_model.py. The following command will return the similarities between two adjacent layers
+```bash
+python CKA_guide_laye_pruning.py --gpu 0 --arch resnet56 --set cifar10 --num_classes 10 --batch_size 256 --pretrained  --evaluate
+```
